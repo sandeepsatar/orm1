@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acess</title>
+</head>
+<body>
+    <center>
+        <h1>Displaying the info the acess model</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="topic">TOPIC</label>
+            <select name="topic" id="topic">
+                {% for i in topics %}
+                <option value="{{i}}">{{i.topic_name}}</option>
+                {% endfor %}
+            </select><br>
+            <button>submit</button>
+        </form>
+    </center>    
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insert topic</title>
+</head>
+<body>
+    <center>
+        <h1>Displaying the info the Topic model</h1>
+        <form  method="POST">
+            {% csrf_token %}
+            <label for="topic">name </label>
+            <input type="text" name="topic" id="topic">
+            <button>submit</button>
+            
+        </form>
+    </center>    
+    
+</body>
+</html>
